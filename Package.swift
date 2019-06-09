@@ -2,5 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "USBDeviceSwift"
+    name: "USBDeviceSwift",
+    products: [
+        .library(name: "USBDeviceSwift", targets: ["USBDeviceSwift"])
+    ],
+    targets: [
+        .target(name: "USBDeviceSwift", path: "Sources")
+    ]
 )
